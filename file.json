@@ -1,0 +1,38 @@
+{
+  "BaseModel.7f4a5ba5-27fd-4f5f-8341-4f2065c078e7": {
+    "id": "7f4a5ba5-27fd-4f5f-8341-4f2065c078e7",
+    "created_at": "2023-07-10T11:31:59.294080",
+    "updated_at": "2023-07-10T11:31:59.294083",
+    "__class__": "BaseModel"
+  },
+  "User.aec6d539-ff8c-403f-a0e5-7e6bc8ae8981": {
+    "id": "aec6d539-ff8c-403f-a0e5-7e6bc8ae8981",
+    "created_at": "2023-07-10T11:32:03.799570",
+    "updated_at": "2023-07-10T11:32:03.799578",
+    "__class__": "User"
+  },
+  "State.a2791ba5-9822-46ae-a427-2e13ab9a72dd": {
+    "id": "a2791ba5-9822-46ae-a427-2e13ab9a72dd",
+    "created_at": "2023-07-10T11:32:11.156323",
+    "updated_at": "2023-07-10T11:32:11.156341",
+    "__class__": "State"
+  },
+  "City.2e9b7c22-ff97-4f7d-b3a3-ef66b1a47931": {
+    "id": "2e9b7c22-ff97-4f7d-b3a3-ef66b1a47931",
+    "created_at": "2023-07-10T11:32:15.553632",
+    "updated_at": "2023-07-10T11:32:15.553640",
+    "__class__": "City"
+  },
+  "Amenity.749c371c-2b72-4267-a6b8-2bc153ac42b3": {
+    "id": "749c371c-2b72-4267-a6b8-2bc153ac42b3",
+    "created_at": "2023-07-10T11:32:34.503941",
+    "updated_at": "2023-07-10T11:32:34.503963",
+    "__class__": "Amenity"
+  },
+  "Review.19e47d01-8663-4c8a-89fb-d7470b9943c2": {
+    "id": "19e47d01-8663-4c8a-89fb-d7470b9943c2",
+    "created_at": "2023-07-10T11:32:41.805736",
+    "updated_at": "2023-07-10T11:32:41.805745",
+    "__class__": "Review"
+  }
+}
