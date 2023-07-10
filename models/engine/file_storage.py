@@ -19,8 +19,9 @@ class FileStorage:
     def new(self, obj):
         """ add an object in the dictionary "__objects" using 
         the class name and its attribute id """
-        key = f"{obj.__class__.__name__}.{obj.id}"
-        FileStorage.__objects[key] = obj
+        if obj is not None:
+            key = f"{obj.__class__.__name__}.{obj.id}"
+            self.__objects[key] = obj
 
     def save(self):
         """Serializes __objects to the JSON file (path: __file_path)"""
@@ -32,10 +33,14 @@ class FileStorage:
 
     def reload(self):
         """deserializes the JSON file to __objects"""
-        from models.base_model import BaseModel
-        if os.path.isfile(self.__file_path):
-            with open(self.__file_path, "r", encoding="utf-8") as file:
-                obj_dict = json.load(file)
-                for key, value in obj_dict.items():
-                    obj = BaseModel(**value)
+        _dict = {"BaseModel": BaseModel}
+        try:
+            with open(self.__file_path, 'r') as file:
+                for key, value in json.load(file).items():
+                    cls = value["__class__"]
+                    clas = _dict[cls]
+                    obj = clas(**value)
                     self.__objects[key] = obj
+
+        except FileNotFoundError:
+            pass
