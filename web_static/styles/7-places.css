@@ -1,0 +1,29 @@
+.container .places {
+    font-size: 20px;
+}
+
+.container .articles .top {
+    display: inline-block;
+}
+
+.container .articles .bottom {
+   margin-left: 265px;
+}
+
+.container .places h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .places article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ff5a5f;
+    border-radius: 4px;
+}
